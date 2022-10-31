@@ -1,15 +1,11 @@
-
-var message = "Hello";
-console.log(message);
-
-message = "World";
-console.log(message);
-
-const mail = "Letter";
-console.log(mail);
-
-let age = 25;
-console.log(age);
-
-age = 28;
-console.log(age);
+function calculateSumOfArray() {
+    const initialArray = [3, 2, "2", null, 1.5, 9.5, undefined];
+    let sumOfNumbers = 0;
+    for (let i = 0; i < initialArray.length; i++){
+    if (typeof (initialArray[i]) === 'number'){
+        sumOfNumbers = sumOfNumbers + initialArray[i];
+    }
+   }
+   console.log(sumOfNumbers);
+}
+   calculateSumOfArray();
