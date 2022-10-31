@@ -53,3 +53,17 @@ function calculateSumOfArray() {
    printSeasonByMonth("NOVEMBER");
     printSeasonByMonth("JULY");
     printSeasonByMonth("APRIL");
+
+    function calculateWordsInString(string) {
+        let count = 1;
+        for (let i = 0; i < string.length - 1; i++){
+            if (string[i] === " " && string[i+1] != " "){
+            count += 1;
+            }
+        }
+        console.log(count);
+       }
+       calculateWordsInString("Easy string for count");
+       calculateWordsInString("Easy");
+       calculateWordsInString("Some string with a triple   space");
+       calculateWordsInString("Some?  string, with a triple   space");
