@@ -21,3 +21,35 @@ function calculateSumOfArray() {
    printPowsOf2(null);
    printPowsOf2(128);
    printPowsOf2(60);
+
+   function printSeasonByMonth(month) {
+    switch(month){
+        case "DECEMBER":
+        case "JANUARY":
+        case "FEBRUARY":
+            console.log("it's Winter now")
+            break;
+        case "MARCH":
+        case "APRIL":
+        case "MAY":
+            console.log("it's Spring now")
+            break;
+        case "JUNE":
+        case "JULY":
+        case "AUGUST":
+            console.log("it's Summer now")
+            break;
+        case "SEPTEMBER":
+        case "OCTOBER":
+        case "NOVEMBER":
+            console.log("it's Autum now")
+            break;
+            default:
+                console.log("it's not a month")
+    }
+   }
+    
+   printSeasonByMonth("FEBRUARY");
+   printSeasonByMonth("NOVEMBER");
+    printSeasonByMonth("JULY");
+    printSeasonByMonth("APRIL");
