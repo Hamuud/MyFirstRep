@@ -7,6 +7,7 @@ function calculateSumOfArray() {
     }
    }
    console.log(sumOfNumbers);
+   console.log("------------------------");
 }
    calculateSumOfArray();
 
@@ -20,7 +21,9 @@ function calculateSumOfArray() {
    printPowsOf2("302");
    printPowsOf2(null);
    printPowsOf2(128);
+   console.log("------------------------");
    printPowsOf2(60);
+   console.log("------------------------");
 
    function printSeasonByMonth(month) {
     switch(month){
@@ -49,15 +52,16 @@ function calculateSumOfArray() {
     }
    }
     
-   printSeasonByMonth("FEBRUARY");
-   printSeasonByMonth("NOVEMBER");
+    printSeasonByMonth("FEBRUARY");
+    printSeasonByMonth("NOVEMBER");
     printSeasonByMonth("JULY");
     printSeasonByMonth("APRIL");
+    console.log("------------------------");
 
     function calculateWordsInString(string) {
         let count = 1;
-        for (let i = 0; i < string.length - 1; i++){
-            if (string[i] === " " && string[i+1] != " "){
+        for (let i = 0; i < string.length - 1; i++) {
+            if (string[i] === " " && string[i+1] != " ") {
             count += 1;
             }
         }
@@ -67,3 +71,4 @@ function calculateSumOfArray() {
        calculateWordsInString("Easy");
        calculateWordsInString("Some string with a triple   space");
        calculateWordsInString("Some?  string, with a triple   space");
+       console.log("------------------------");
